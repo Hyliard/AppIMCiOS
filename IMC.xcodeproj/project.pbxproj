@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE589B332DDBBC3B00D0C3A2 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B2F2DDBBC3A00D0C3A2 /* IMCView.swift */; };
+		CE589B342DDBBC3B00D0C3A2 /* Entra y mira aqui in Resources */ = {isa = PBXBuildFile; fileRef = CE589B302DDBBC3A00D0C3A2 /* Entra y mira aqui */; };
+		CE589B352DDBBC3B00D0C3A2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B312DDBBC3A00D0C3A2 /* MenuView.swift */; };
+		CE589B362DDBBC3B00D0C3A2 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B322DDBBC3A00D0C3A2 /* IMCResult.swift */; };
 		CE7D418D2CF4856800362520 /* IMCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D418C2CF4856800362520 /* IMCApp.swift */; };
 		CE7D418F2CF4856800362520 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D418E2CF4856800362520 /* ContentView.swift */; };
 		CE7D41912CF4856A00362520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7D41902CF4856A00362520 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE589B2F2DDBBC3A00D0C3A2 /* IMCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IMCView.swift; path = IMC/IMCView.swift; sourceTree = "<group>"; };
+		CE589B302DDBBC3A00D0C3A2 /* Entra y mira aqui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Entra y mira aqui"; path = "IMC/Entra y mira aqui"; sourceTree = "<group>"; };
+		CE589B312DDBBC3A00D0C3A2 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = IMC/MenuView.swift; sourceTree = "<group>"; };
+		CE589B322DDBBC3A00D0C3A2 /* IMCResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IMCResult.swift; path = IMC/IMCResult.swift; sourceTree = "<group>"; };
 		CE7D41892CF4856800362520 /* IMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D418C2CF4856800362520 /* IMCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCApp.swift; sourceTree = "<group>"; };
 		CE7D418E2CF4856800362520 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,9 +40,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE589B372DDBBCE100D0C3A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CE589B382DDBBD0D00D0C3A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D418E2CF4856800362520 /* ContentView.swift */,
+				CE589B2F2DDBBC3A00D0C3A2 /* IMCView.swift */,
+				CE589B312DDBBC3A00D0C3A2 /* MenuView.swift */,
+				CE589B322DDBBC3A00D0C3A2 /* IMCResult.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CE589B392DDBBD7400D0C3A2 /* ViewsModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D418C2CF4856800362520 /* IMCApp.swift */,
+			);
+			name = ViewsModels;
+			sourceTree = "<group>";
+		};
 		CE7D41802CF4856700362520 = {
 			isa = PBXGroup;
 			children = (
+				CE589B392DDBBD7400D0C3A2 /* ViewsModels */,
+				CE589B382DDBBD0D00D0C3A2 /* Views */,
+				CE589B372DDBBCE100D0C3A2 /* Models */,
+				CE589B302DDBBC3A00D0C3A2 /* Entra y mira aqui */,
 				CE7D418B2CF4856800362520 /* IMC */,
 				CE7D418A2CF4856800362520 /* Products */,
 			);
@@ -51,8 +89,6 @@
 		CE7D418B2CF4856800362520 /* IMC */ = {
 			isa = PBXGroup;
 			children = (
-				CE7D418C2CF4856800362520 /* IMCApp.swift */,
-				CE7D418E2CF4856800362520 /* ContentView.swift */,
 				CE7D41902CF4856A00362520 /* Assets.xcassets */,
 				CE7D41922CF4856A00362520 /* Preview Content */,
 			);
@@ -127,6 +163,7 @@
 			files = (
 				CE7D41942CF4856A00362520 /* Preview Assets.xcassets in Resources */,
 				CE7D41912CF4856A00362520 /* Assets.xcassets in Resources */,
+				CE589B342DDBBC3B00D0C3A2 /* Entra y mira aqui in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7D418F2CF4856800362520 /* ContentView.swift in Sources */,
+				CE589B352DDBBC3B00D0C3A2 /* MenuView.swift in Sources */,
+				CE589B362DDBBC3B00D0C3A2 /* IMCResult.swift in Sources */,
+				CE589B332DDBBC3B00D0C3A2 /* IMCView.swift in Sources */,
 				CE7D418D2CF4856800362520 /* IMCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
