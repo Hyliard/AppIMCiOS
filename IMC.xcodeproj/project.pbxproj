@@ -7,30 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE589B332DDBBC3B00D0C3A2 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B2F2DDBBC3A00D0C3A2 /* IMCView.swift */; };
-		CE589B342DDBBC3B00D0C3A2 /* Media in Resources */ = {isa = PBXBuildFile; fileRef = CE589B302DDBBC3A00D0C3A2 /* Media */; };
-		CE589B352DDBBC3B00D0C3A2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B312DDBBC3A00D0C3A2 /* MenuView.swift */; };
-		CE589B362DDBBC3B00D0C3A2 /* IMCResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B322DDBBC3A00D0C3A2 /* IMCResultView.swift */; };
-		CE589B3B2DDBC28B00D0C3A2 /* IMCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B3A2DDBC28B00D0C3A2 /* IMCModel.swift */; };
-		CE589B3E2DDBC31E00D0C3A2 /* IMCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE589B3D2DDBC31E00D0C3A2 /* IMCViewModel.swift */; };
 		CE7D418D2CF4856800362520 /* IMCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D418C2CF4856800362520 /* IMCApp.swift */; };
-		CE7D418F2CF4856800362520 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D418E2CF4856800362520 /* MainView.swift */; };
+		CE7D418F2CF4856800362520 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D418E2CF4856800362520 /* MenuView.swift */; };
 		CE7D41912CF4856A00362520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7D41902CF4856A00362520 /* Assets.xcassets */; };
 		CE7D41942CF4856A00362520 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7D41932CF4856A00362520 /* Preview Assets.xcassets */; };
+		CE7D419B2CF4894000362520 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D419A2CF4894000362520 /* IMCResult.swift */; };
+		CE7D419D2CF4895200362520 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D419C2CF4895200362520 /* IMCView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE589B2F2DDBBC3A00D0C3A2 /* IMCView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IMCView.swift; path = IMC/IMCView.swift; sourceTree = "<group>"; };
-		CE589B302DDBBC3A00D0C3A2 /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Media; path = IMC/Media; sourceTree = "<group>"; };
-		CE589B312DDBBC3A00D0C3A2 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = IMC/MenuView.swift; sourceTree = "<group>"; };
-		CE589B322DDBBC3A00D0C3A2 /* IMCResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IMCResultView.swift; path = IMC/IMCResultView.swift; sourceTree = "<group>"; };
-		CE589B3A2DDBC28B00D0C3A2 /* IMCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCModel.swift; sourceTree = "<group>"; };
-		CE589B3D2DDBC31E00D0C3A2 /* IMCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCViewModel.swift; sourceTree = "<group>"; };
 		CE7D41892CF4856800362520 /* IMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D418C2CF4856800362520 /* IMCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCApp.swift; sourceTree = "<group>"; };
-		CE7D418E2CF4856800362520 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CE7D418E2CF4856800362520 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CE7D41902CF4856A00362520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7D41932CF4856A00362520 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE7D419A2CF4894000362520 /* IMCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResult.swift; sourceTree = "<group>"; };
+		CE7D419C2CF4895200362520 /* IMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,49 +36,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE589B372DDBBCE100D0C3A2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CE589B3A2DDBC28B00D0C3A2 /* IMCModel.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		CE589B382DDBBD0D00D0C3A2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CE7D418E2CF4856800362520 /* MainView.swift */,
-				CE589B2F2DDBBC3A00D0C3A2 /* IMCView.swift */,
-				CE589B312DDBBC3A00D0C3A2 /* MenuView.swift */,
-				CE589B322DDBBC3A00D0C3A2 /* IMCResultView.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		CE589B392DDBBD7400D0C3A2 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				CE589B3D2DDBC31E00D0C3A2 /* IMCViewModel.swift */,
-			);
-			name = ViewModels;
-			sourceTree = "<group>";
-		};
-		CE589B3C2DDBC2FE00D0C3A2 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				CE7D418C2CF4856800362520 /* IMCApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
 		CE7D41802CF4856700362520 = {
 			isa = PBXGroup;
 			children = (
-				CE589B3C2DDBC2FE00D0C3A2 /* App */,
-				CE589B372DDBBCE100D0C3A2 /* Models */,
-				CE589B392DDBBD7400D0C3A2 /* ViewModels */,
-				CE589B382DDBBD0D00D0C3A2 /* Views */,
-				CE589B302DDBBC3A00D0C3A2 /* Media */,
+				CEB4190C2CF4EB0C00FC847C /* Entra y mira aqui */,
 				CE7D418B2CF4856800362520 /* IMC */,
 				CE7D418A2CF4856800362520 /* Products */,
 			);
@@ -103,6 +56,10 @@
 		CE7D418B2CF4856800362520 /* IMC */ = {
 			isa = PBXGroup;
 			children = (
+				CE7D418C2CF4856800362520 /* IMCApp.swift */,
+				CE7D418E2CF4856800362520 /* MenuView.swift */,
+				CE7D419C2CF4895200362520 /* IMCView.swift */,
+				CE7D419A2CF4894000362520 /* IMCResult.swift */,
 				CE7D41902CF4856A00362520 /* Assets.xcassets */,
 				CE7D41922CF4856A00362520 /* Preview Content */,
 			);
@@ -115,6 +72,13 @@
 				CE7D41932CF4856A00362520 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEB4190C2CF4EB0C00FC847C /* Entra y mira aqui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Entra y mira aqui";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +109,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					CE7D41882CF4856800362520 = {
 						CreatedOnToolsVersion = 14.2;
@@ -177,7 +141,6 @@
 			files = (
 				CE7D41942CF4856A00362520 /* Preview Assets.xcassets in Resources */,
 				CE7D41912CF4856A00362520 /* Assets.xcassets in Resources */,
-				CE589B342DDBBC3B00D0C3A2 /* Media in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,12 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7D418F2CF4856800362520 /* MainView.swift in Sources */,
-				CE589B352DDBBC3B00D0C3A2 /* MenuView.swift in Sources */,
-				CE589B3E2DDBC31E00D0C3A2 /* IMCViewModel.swift in Sources */,
-				CE589B362DDBBC3B00D0C3A2 /* IMCResultView.swift in Sources */,
-				CE589B3B2DDBC28B00D0C3A2 /* IMCModel.swift in Sources */,
-				CE589B332DDBBC3B00D0C3A2 /* IMCView.swift in Sources */,
+				CE7D419D2CF4895200362520 /* IMCView.swift in Sources */,
+				CE7D418F2CF4856800362520 /* MenuView.swift in Sources */,
+				CE7D419B2CF4894000362520 /* IMCResult.swift in Sources */,
 				CE7D418D2CF4856800362520 /* IMCApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +197,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -252,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -298,7 +257,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -307,7 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
