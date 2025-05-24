@@ -32,3 +32,25 @@ El Índice de Masa Corporal (IMC) es una medida que relaciona el peso con la alt
 
    ```bash
    git clone https://github.com/tu_usuario/IMC.git
+
+2. Abre IMC.xcodeproj en Xcode (preferiblemente Xcode 15 o superior).
+
+3. Ejecuta el proyecto en el simulador o en tu dispositivo iOS.
+📂 Estructura del proyecto
+
+IMC/
+├── IMCApp.swift           # Punto de entrada de la app
+├── IMCView.swift          # Vista principal con inputs
+├── IMCResult.swift        # Vista del resultado con interpretación
+├── MenuView.swift         # (opcional) Menú de navegación si existe
+├── Assets.xcassets        # Paleta de colores personalizados
+├── Preview Content        # Vistas de prueba
+├── .gitignore             # Ignora archivos temporales y del sistema
+└── README.md              # Este archivo
+🎨 Capturas de pantalla (opcional)
+
+Puedes agregar capturas del simulador aquí si deseas.
+
+📄 Licencia
+
+Este proyecto fue desarrollado por Gerard como parte de su aprendizaje en SwiftUI. Puedes usarlo con fines educativos o personales.
