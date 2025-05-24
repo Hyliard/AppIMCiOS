@@ -10,22 +10,25 @@ import SwiftUI
 struct IMCResult: View {
     let userWeight: Double
     let userHeight: Double
-    
+
+    var result: Double {
+        calculateImc(weight: userWeight, height: userHeight)
+    }
+
     var body: some View {
         VStack {
             Text("Tu resultado")
                 .font(.title)
                 .bold()
                 .foregroundColor(.white)
-            
-            // Corregir el uso de userHeight
-            let result = calculateImc(weight: userWeight, height: userHeight)
+
             InformationView(result: result)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BackgroundApp"))
     }
 }
+
 
 func calculateImc(weight: Double, height: Double) -> Double {
     // Calcular el IMC usando height correctamente

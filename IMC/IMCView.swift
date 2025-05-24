@@ -9,50 +9,61 @@ import SwiftUI
 
 struct IMCView: View {
     
-//    init(){
-//        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
-//    }
-    
-    @State var gender:Int = 0
-    @State var age:Int = 18
-    @State var weight:Int = 80
-    @State var height:Double = 150
+    @State var gender: Int = 0
+    @State var age: Int = 18
+    @State var weight: Int = 80
+    @State var height: Double = 150
     
     var body: some View {
-        VStack{
-            HStack{
-                ToggleButton(text: "Hombre", imageName: "heart.fill", gender: 0, selectedGender: $gender )
-                ToggleButton(text: "Mujer", imageName: "star.fill", gender: 1, selectedGender: $gender)
+        
+        NavigationStack {
+            
+            VStack {
+                
+                HStack {
+                    ToggleButton(text: "Hombre", imageName: "heart.fill", gender: 0, selectedGender: $gender )
+                    ToggleButton(text: "Mujer", imageName: "star.fill", gender: 1, selectedGender: $gender)
+                }
+                
+                HeightCalculator(selectedHeight: $height)
+                
+                HStack {
+                    CounterButton(text: "Edad", number: $age)
+                    CounterButton(text: "Peso", number: $weight)
+                }
+                
+                IMCCalculateButton(userWeight: Double(weight), userHeight: height)
+                
             }
-            HeightCalculator(selectedHeight: $height)
-            HStack{
-                CounterButton(text: "Edad", number: $age)
-                CounterButton(text: "Peso", number: $weight)
-            }
-            IMCCalculateButton(userWeight: Double(weight), userHeight: height)
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("BackgroundApp"))
-            .toolbar{
+            .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("IMC Calculator").bold().foregroundColor(.white)
+                    Text("IMC Calculator")
+                        .bold()
+                        .foregroundColor(.white)
                 }
             }
-//            .navigationBarBackButtonHidden()
-//            .navigationTitle("Imc Calculator")
+            
+        }
+        
     }
+    
 }
+
+
 
 struct IMCCalculateButton:View {
     let userWeight:Double
     let userHeight:Double
     
     var body: some View {
-        NavigationStack{
             NavigationLink(destination:{IMCResult(userWeight: userWeight, userHeight: userHeight)}){
                 Text("Calcular").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold().foregroundColor(.purple)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 100).background(Color("backgroundComponent"))
             }
-        }
+        
     }
 }
 
@@ -135,7 +146,7 @@ struct CounterButton:View {
                     }
                 }
                 Button(action:{
-                    if(number < 100){
+                    if(number < 150){
                         number += 1
                     }
                 }){

@@ -12,12 +12,12 @@ struct MenuView: View {
         NavigationStack {
             ZStack {
                 
-                // Estilo de fondo
+                
                 Color("BackgroundApp")
-                    .ignoresSafeArea() // cubre toda la pantalla
+                    .ignoresSafeArea()
                 
                 VStack {
-                    // Título de la vista
+                
                     Text("IMC Calculator")
                         .font(.system(size: 40, weight: .heavy))
                         .fontWeight(.bold)
@@ -29,7 +29,7 @@ struct MenuView: View {
                     
                     Image("body-mass") .resizable() .scaledToFit()
                     
-                    // Lista de opciones
+                    
                     VStack(spacing: 20) {
                         
                         NavigationLink(destination: IMCView()) {
