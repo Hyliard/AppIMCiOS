@@ -1,11 +1,11 @@
 {
   "images" : [
     {
+      "filename" : "bodymass.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "body-mass-index-bmi-chart.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

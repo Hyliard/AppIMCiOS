@@ -18,7 +18,7 @@ struct MenuView: View {
                 
                 VStack {
                 
-                    Text("IMC Calculator")
+                    Text("Body Mass Index")
                         .font(.system(size: 40, weight: .heavy))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -27,7 +27,7 @@ struct MenuView: View {
                         .transition(.move(edge: .top))
                         .animation(.easeOut(duration: 0.8), value: 1)
                     
-                    Image("body-mass") .resizable() .scaledToFit()
+                    Image("bodymass") .resizable() .scaledToFit()
                     
                     
                     VStack(spacing: 20) {
@@ -44,7 +44,7 @@ struct MenuView: View {
                                     .foregroundColor(.white)
                             }
                             .frame(maxWidth: .infinity)
-                            .background(LinearGradient(gradient: Gradient(colors: [Color.green, Color.green.opacity(0.6)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                            .background(LinearGradient(gradient: Gradient(colors: [Color.indigo, Color.purple.opacity(0.6)]), startPoint: .topLeading, endPoint: .bottomTrailing))
                             .cornerRadius(15)
                             .shadow(radius: 10)
                             .padding(.horizontal)

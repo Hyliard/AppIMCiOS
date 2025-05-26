@@ -21,8 +21,8 @@ struct IMCView: View {
             VStack {
                 
                 HStack {
-                    ToggleButton(text: "Hombre", imageName: "heart.fill", gender: 0, selectedGender: $gender )
-                    ToggleButton(text: "Mujer", imageName: "star.fill", gender: 1, selectedGender: $gender)
+                    ToggleButton(text: "Hombre", imageName: "person.crop.circle.fill", gender: 0, selectedGender: $gender )
+                    ToggleButton(text: "Mujer", imageName: "person.crop.circle.fill", gender: 1, selectedGender: $gender)
                 }
                 
                 HeightCalculator(selectedHeight: $height)
