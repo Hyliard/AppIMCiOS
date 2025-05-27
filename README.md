@@ -49,8 +49,7 @@ IMC/
 └── README.md              # Este archivo
 🎨 Capturas de pantalla (opcional)
 
-Puedes agregar capturas del simulador aquí si deseas.
 
 📄 Licencia
 
-Este proyecto fue desarrollado por Gerard como parte de su aprendizaje en SwiftUI. Puedes usarlo con fines educativos o personales.
+Este proyecto fue desarrollado por Hyliard como parte de su aprendizaje en SwiftUI. Puedes usarlo con fines educativos o personales.
