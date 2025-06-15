@@ -54,16 +54,24 @@ struct IMCView: View {
 
 
 
-struct IMCCalculateButton:View {
-    let userWeight:Double
-    let userHeight:Double
+struct IMCCalculateButton: View {
+    let userWeight: Double
+    let userHeight: Double
     
     var body: some View {
-            NavigationLink(destination:{IMCResult(userWeight: userWeight, userHeight: userHeight)}){
-                Text("Calcular").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).bold().foregroundColor(.purple)
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 100).background(Color("backgroundComponent"))
-            }
-        
+        NavigationLink(destination: IMCResult(userWeight: userWeight, userHeight: userHeight)) {
+            Text("Calcular IMC")
+                .font(.system(size: UIScreen.main.bounds.width < 375 ? 20 : 25))
+                .bold()
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
+                .background(Color.purple)
+                .cornerRadius(15)
+                .shadow(color: .purple.opacity(0.4), radius: 10, x: 0, y: 5)
+                .padding(.horizontal)
+
+        }
     }
 }
 
