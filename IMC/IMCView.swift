@@ -21,8 +21,8 @@ struct IMCView: View {
             VStack {
                 
                 HStack {
-                    ToggleButton(text: "Hombre", imageName: "person.crop.circle.fill", gender: 0, selectedGender: $gender )
-                    ToggleButton(text: "Mujer", imageName: "person.crop.circle.fill", gender: 1, selectedGender: $gender)
+                    ToggleButton(text: "Hombre", imageName: "m.circle.fill", gender: 0, selectedGender: $gender )
+                    ToggleButton(text: "Mujer", imageName: "f.circle.fill", gender: 1, selectedGender: $gender)
                 }
                 
                 HeightCalculator(selectedHeight: $height)
@@ -42,7 +42,7 @@ struct IMCView: View {
                 ToolbarItem(placement: .principal) {
                     Text("IMC Calculator")
                         .bold()
-                        .foregroundColor(.white)
+                        .foregroundColor(.secondary)
                 }
             }
             
@@ -74,24 +74,31 @@ struct ToggleButton:View {
     @Binding var selectedGender:Int
     
     var body: some View {
-        
-        let color = (gender == selectedGender) ? Color("BackgroundComponentSelected") : Color("backgroundComponent")
-        
+        let isSelected = (gender == selectedGender)
+        let color = isSelected ? Color("BackgroundComponentSelected") : Color("backgroundComponent")
+
         Button(action: {
             selectedGender = gender
         }) {
-            VStack{
+            VStack {
                 Image(systemName: imageName)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.white)
-                InformationText(text: text)
-            }.frame(maxWidth: .infinity, maxHeight: .infinity).background(color)
+                    .frame(height: 100)
+                    .foregroundColor(isSelected ? .purple : .primary)
+                Text(text)
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.primary)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(color)
+            .cornerRadius(10)
+            .accessibilityLabel(Text("Género: \(text)"))
         }
-
     }
 }
+
 
 struct InformationText:View {
     let text:String
